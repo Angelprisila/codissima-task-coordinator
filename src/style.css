@@ -1,0 +1,123 @@
+/* Global Reset and Font */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f7f6; /* Light gray background */
+}
+
+/* App Container */
+.app-container {
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Typography */
+h1 {
+    text-align: center;
+    color: #4a5568; /* Dark text */
+    margin-bottom: 5px;
+}
+.subtitle {
+    text-align: center;
+    color: #718096; /* Gray text */
+    margin-bottom: 30px;
+}
+
+/* Forms and Inputs */
+.form-container {
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box; 
+}
+button.submit-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #3182ce; /* Blue */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.2s;
+}
+button.submit-button:hover {
+    background-color: #2c5282;
+}
+
+/* Task Card Styling */
+.task-card {
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    margin-bottom: 15px;
+    border-left: 5px solid #3182ce; /* Blue left border */
+}
+.task-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.task-title {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #2d3748;
+}
+.task-description {
+    color: #4a5568;
+    font-size: 0.9em;
+    padding-top: 10px;
+    margin-top: 10px;
+    border-top: 1px solid #e2e8f0;
+}
+.task-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 15px;
+}
+.task-actions button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.8em;
+    transition: background-color 0.2s;
+}
+
+/* Status Badges */
+.status-badge {
+    padding: 5px 10px;
+    border-radius: 12px;
+    font-size: 0.7em;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.status-Done {
+    background-color: #9ae6b4; /* Light Green */
+    color: #2f855a; /* Dark Green */
+}
+.status-InProgress {
+    background-color: #fce38a; /* Light Yellow */
+    color: #e38a00; /* Dark Yellow */
+}
+.status-To-Do {
+    background-color: #feb2b2; /* Light Red */
+    color: #c53030; /* Dark Red */
+}
+.status-default {
+    background-color: #e2e8f0;
+    color: #4a5568;
+}
